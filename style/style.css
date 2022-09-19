@@ -1,0 +1,305 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: 'Louis Vuitton';
+  src: url('../font/LouisVuitton-Regular.woff2') format('woff2');
+  src: url('../font/LouisVuitton-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Louis Vuitton';
+  src: url('../font/LouisVuitton-Medium.woff2') format('woff2');
+  src: url('../font/LouisVuitton-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@-webkit-keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes collection {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+@keyframes collection {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes CTA {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+@keyframes CTA {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInFirst {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInFirst {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInSecond {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInSecond {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInThird {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInThird {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInFourth {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInFourth {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+#banner {
+  -webkit-font-smoothing: antialiased;
+  min-width: 970px;
+  width: 970px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  position: relative;
+}
+#border {
+  width: 970px;
+  height: 250px;
+  position: absolute;
+  border: solid 1px #dedede;
+  z-index: 1;
+}
+.item {
+  width: calc(100%/3);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.item img {
+  position: absolute;
+}
+.item img.logo {
+  position: inherit;
+  width: 248px;
+  margin-top: 75px;
+  -webkit-animation: logo 10s;
+          animation: logo 10s;
+}
+.item img.fade.first {
+  -webkit-animation: fadeInFirst 10s;
+          animation: fadeInFirst 10s;
+}
+.item img.fade.second {
+  -webkit-animation: fadeInSecond 10s;
+          animation: fadeInSecond 10s;
+}
+.item img.fade.third {
+  -webkit-animation: fadeInThird 10s;
+          animation: fadeInThird 10s;
+}
+.item img.fade.fourth {
+  -webkit-animation: fadeInFourth 10s;
+          animation: fadeInFourth 10s;
+}
+.item h2 {
+  font-family: 'Louis Vuitton', sans-serif;
+  font-weight: 500;
+  margin: 5px 0 40px 0;
+  letter-spacing: 0.034em;
+  font-size: 20px;
+  -webkit-animation: collection 10s;
+          animation: collection 10s;
+}
+.item a {
+  font-family: 'Louis Vuitton', sans-serif;
+  color: black;
+  background: transparent;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.065em;
+  text-decoration: none;
+  -webkit-animation: CTA 10s;
+          animation: CTA 10s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  position: relative;
+  z-index: 2;
+}
+.item a:hover {
+  color: white;
+  background: black;
+}
